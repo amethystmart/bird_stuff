@@ -30,7 +30,7 @@ jobs:
     - name: playwright running
       run:  playwright install
     - name: Scraping today's data
-      run: jupyter nbconvert --to notebook --execute "bird.ipynb" --stdout
+      run: jupyter nbconvert --to notebook --execute "bird_things.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
